@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de aprendizagem do Ensino Médio Técnico."
+    />
+    <title>Front-End e Back-End | Formação Tecnica</title>
+    <!-- Folha de estilos compartilhada. O caminho muda nas páginas dentro de /paginas. -->
+    <link rel="stylesheet" href="../css/estilo.css" />
+  </head>
+  <body>
+    <!-- CABEÇALHO E MENU PRINCIPAL: o menu horizontal usa display:flex no CSS. -->
+    <header class="site-header">
+      <a class="marca" href="../index.html" 
+      ><span>Front-End e Back-End</span></a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+      >
+        ☰ Menu
+      </button>
+      <nav aria-label="Navegação principal">
+        <ul class="menu-horizontal" id="menu-principal">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="areas-do-saber.html">Áreas do Saber</a></li>
+          <li>
+            <a href="formacao-tecnica.html" aria-current="page"
+              >Formação Técnica</a
+            >
+          </li>
+          <li><a href="curriculo.html">Currículo</a></li>
+          <li><a href="memorias.html">Memórias</a></li>
+          <li><a href="jornada.html">Jornada</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <a href="formacao-tecnica.html">Formação Tecnica</a> • Front-End e Back-End
+      <h1>Front-End e Back-End</h1>
+      <p class="subtitulo">
+        Exemplo de página técnica para explicar as tecnologias estudadas e
+        registrar evidências de prática.
+      </p>
+      <section class="grade-cards">
+        <article class="card">
+          <h3>HTML</h3>
+          <p>Organiza a estrutura e o significado do conteúdo da página.</p>
+          <pre><code>&lt;h1&gt;Meu projeto&lt;/h1&gt;</code></pre>
+        </article>
+        <article class="card">
+          <h3>CSS</h3>
+          <p>Controla cores, tipografia, espaçamento e layout.</p>
+          <pre><code>.card { padding: 16px; }</code></pre>
+        </article>
+        <article class="card">
+          <h3>JavaScript</h3>
+          <p>Adiciona comportamento e interatividade aos elementos.</p>
+          <pre><code>botao.addEventListener("click", ...);</code></pre>
+        </article>
+      </section>
+      <section>
+        <h2>Exercício 1</h2>
+        <p>
+          Desenvolvemos uma esteira automatizada para identificação e
+          rastreamento de itens usando visão computacional e web. Conforme os
+          objetos passam pela esteira, uma câmera ESP32-CAM captura os QR Codes
+          e envia os dados para uma aplicação hospedada na nuvem, onde um script
+          em JavaScript decodifica a leitura, extrai as informações e transmite
+          tudo para uma interface web integrada a um banco de dados para
+          registro em tempo real.
+        </p>
+        <div class="grade-cards">
+        <article class="card">
+          <img src="../imagens/atividades/qrcode.jpg" alt="Imagem ilustrativa relacionada a Trabalho de Esteira Inteligente" />
+        </article>
+        <article class="card">
+          <img src="../imagens/atividades/esp32.jpg" alt="" />
+        </article>
+      </section>
+      <section class="grade-cards">
+        <article class="card">
+          <h3>Java</h3>
+          <p>
+            Estrutura a lógica de negócio e sistemas completos com Programação
+            Orientada a Objetos.
+          </p>
+          <pre><code>public class Sistema { ... }</code></pre>
+        </article>
+        <article class="card">
+          <h3>Banco de Dados</h3>
+          <p>
+            Organiza, consulta e salva dados de forma persistente usando SQLite
+            e Firestore.
+          </p>
+          <pre><code>SELECT * FROM registros;</code></pre>
+        </article>
+      </section>
+      <section>
+        <h2>Exercício 2</h2>
+        <p>
+          Sistema CRUD de gerenciamento de usuários desenvolvido em Java puro e
+          integrado ao banco de dados SQLite via JDBC. Projetado para rodar
+          diretamente no terminal (sem interface gráfica), o sistema foca na
+          lógica de back-end e na persistência real dos dados, permitindo
+          cadastrar, consultar, atualizar e excluir registros de usuários com
+          armazenamento local leve e estruturado em SQL.
+        </p>
+      </section>
+      <div class="grade-cards">
+        <article class="card">
+          <img src="../imagens/atividades/crud.jpg" alt="" />
+        </article>
+        <article class="card">
+          <img src="../imagens/atividades/crud2.jpg" alt="" />
+        </article>
+      </div>
+    </main>
+    <!-- RODAPÉ compartilhado por todas as páginas. -->
+    <footer class="site-footer">
+      <p>Portfólio de Aprendizagem • Ensino Médio Técnico</p>
+      <p><a style="color: #fff" href="../index.html">Voltar ao início</a></p>
+    </footer>
+    <script src="../js/site.js"></script>
+  </body>
+</html>

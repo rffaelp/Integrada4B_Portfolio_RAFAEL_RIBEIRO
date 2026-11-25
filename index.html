@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de aprendizagem do Ensino Médio Técnico."
+    />
+    <title>Página Inicial | Minha Trajetória</title>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Folhas de estilo compartilhadas -->
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/modelos-cv-index.css" />
+  </head>
+  <body>
+    <!-- CABEÇALHO E MENU PRINCIPAL -->
+    <header class="site-header">
+      <a class="marca" href="index.html"
+        >Minha Trajetória<small
+          >Portfólio de Aprendizagem • Ensino Médio Técnico</small
+        ></a
+      >
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+      >
+        ☰ Menu
+      </button>
+      <nav aria-label="Navegação principal">
+        <ul class="menu-horizontal" id="menu-principal">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="paginas/areas-do-saber.html">Áreas do Saber</a></li>
+          <li><a href="paginas/formacao-tecnica.html">Formação Técnica</a></li>
+          <li><a href="paginas/curriculo.html">Currículo</a></li>
+          <li><a href="paginas/memorias.html">Memórias</a></li>
+          <li><a href="paginas/jornada.html">Jornada</a></li>
+          <li><a href="paginas/contato.html" class="nav-cta">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- DESTAQUE PRINCIPAL -->
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Meu portfólio pessoal</p>
+          <h1>Olá! Eu sou Rafael Ribeiro</h1>
+          <h2>Estudante do Ensino Médio Técnico</h2>
+          <p>
+            Este espaço é meu portfólio de aprendizagem. Aqui registro minha
+            trajetória, os conhecimentos que desenvolvo, meus projetos e os
+            momentos importantes da vida escolar.
+          </p>
+          <p class="hero-meta">
+            <strong>Curso:</strong> Internet das coisas<br /><strong
+              >Turma:</strong
+            >
+            3º ano • <strong>Instituição:</strong> Senac Nações Unidas
+          </p>
+          <div class="hero-acoes">
+            <a class="botao" href="paginas/areas-do-saber.html"
+              >Conheça minhas áreas de estudo →</a
+            >
+            <a class="botao secundario" href="paginas/curriculo.html"
+              >Ver currículo</a
+            >
+          </div>
+        </div>
+        <img
+          class="hero-foto"
+          src="imagens/eu.jpg"
+          alt="Foto ilustrativa do Rafael Pietro"
+        />
+      </section>
+
+      <!-- CARROSSEL HORIZONTAL -->
+      <section>
+        <h2>Explore meu portfólio</h2>
+        <div class="carrossel" data-carrossel>
+          <div class="controles-carrossel">
+            <button type="button" data-anterior aria-label="Cartão anterior">
+              ‹
+            </button>
+            <button type="button" data-proximo aria-label="Próximo cartão">
+              ›
+            </button>
+          </div>
+          <div class="carrossel-faixa">
+            <article class="card slide">
+              <img src="imagens/livros.jpg" alt="Livros e material de estudo" />
+              <h3>Áreas do Saber</h3>
+              <p>
+                Registros das disciplinas e dos aprendizados da formação geral.
+              </p>
+              <a class="botao" href="paginas/areas-do-saber.html">Ver áreas</a>
+            </article>
+            <article class="card slide">
+              <img
+                src="imagens/codigo.jpg"
+                alt="Exemplo ilustrativo de programação"
+              />
+              <h3>Formação Técnica</h3>
+              <p>
+                Projetos de programação, banco de dados, automação e tecnologia.
+              </p>
+              <a class="botao" href="paginas/formacao-tecnica.html"
+                >Ver projetos</a
+              >
+            </article>
+            <article class="card slide">
+              <img
+                src="imagens/eu.jpg"
+                alt="Retrato ilustrativo do estudante"
+              />
+              <h3>Meu Currículo</h3>
+              <p>Formação, habilidades, experiências e certificados.</p>
+              <a class="botao" href="paginas/curriculo.html">Abrir currículo</a>
+            </article>
+            <article class="card slide">
+              <img
+                src="imagens/turma.jpg"
+                alt="Grupo fictício de estudantes"
+              />
+              <h3>Memórias</h3>
+              <p>
+                Momentos especiais, atividades, eventos e trabalhos em equipe.
+              </p>
+              <a class="botao" href="paginas/memorias.html">Ver memórias</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARROSSEL VERTICAL -->
+      <section class="grade-cards">
+        <div>
+          <h2>Meu curso em etapas</h2>
+          <div data-carrossel-vertical>
+            <div class="controles-vertical">
+              <button type="button" data-subir aria-label="Etapa anterior">
+                ↑
+              </button>
+              <button type="button" data-descer aria-label="Próxima etapa">
+                ↓
+              </button>
+            </div>
+            <div class="carrossel-vertical">
+              <article class="slide-vertical">
+                <p class="eyebrow">Etapa 1 • 1º Ano</p>
+                <h3>Hardware</h3>
+                <p>
+                  Montagem de computadores, estudo de peças e componentes, além
+                  de introdução a programação de Arduinos.
+                </p>
+              </article>
+              <article class="slide-vertical">
+                <p class="eyebrow">Etapa 2 • 2º Ano</p>
+                <h3>Redes</h3>
+                <p>
+                  Estudo de protocolos, topologias de rede, práticas com Cisco e
+                  configuração de dispositivos IoT, como Alexa, lâmpadas e
+                  fechaduras inteligentes.
+                </p>
+              </article>
+              <article class="slide-vertical">
+                <p class="eyebrow">Etapa 3 • 3º Ano/p></p>
+                <h3>Projetos IoT e Full-Stack</h3>
+                <p>
+                  Desenvolvimento web full-stack (front-end, back-end e banco de
+                  dados) integrado à montagem e programação de projetos com
+                  Arduino.
+                </p>
+              </article>
+              <article class="slide-vertical">
+                <p class="eyebrow">Etapa 4 • Próximo Nível</p>
+                <h3>Graduação e Carreira</h3>
+                <p>
+                  Entrar no ensino superior em cursos com foco em
+                  desenvolvimento full-stack, arquitetura de software e
+                  segurança cibernética.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <article class="card">
+          <h2>Meu objetivo</h2>
+          <p>
+            Quero aprofundar meus conhecimentos em arquitetura de software,
+            desenvolvimento web e segurança da informação na graduação. Tenho
+            grande interesse nas áreas de programação full-stack, cibersegurança
+            e automação com IoT. No futuro, pretendo usar essa base para atuar
+            remotamente como desenvolvedor, criando aplicações completas,
+            eficientes e seguras.
+          </p>
+          <h3>Hard/Soft Skills</h3>
+          <div class="etiquetas">
+            <span class="etiqueta">Front-End</span>
+            <span class="etiqueta">Back-End</span>
+            <span class="etiqueta">Programação</span>
+            <span class="etiqueta">Trabalho em equipe</span>
+            <span class="etiqueta">Pensamento crítico</span>
+            <span class="etiqueta">Empatia</span>
+            <span class="etiqueta">Resolução de problemas</span>
+          </div>
+        </article>
+      </section>
+      
+    <!-- RODAPÉ -->
+    <footer class="site-footer">
+      <p>Portfólio de Aprendizagem • Ensino Médio Técnico</p>
+      <p>
+        Projeto educativo para registrar conhecimentos, projetos e memórias.
+      </p>
+      <p><a href="index.html">Voltar ao início</a></p>
+    </footer>
+    <script src="js/site.js"></script>
+  </body>
+</html>
